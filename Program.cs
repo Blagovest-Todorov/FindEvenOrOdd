@@ -46,9 +46,10 @@ namespace Delegates
 
             //MyWhere(numbers, n => n % 2 == 0);
             ///MyWhere(numbers, predicate);
-            Console.WriteLine(string.Join(" ", MyWhere(numbers, predicate)));
-
-            static List<int> MyWhere(List<int> numbers, Predicate<int> predicate) 
+            Console.WriteLine(string.Join(" ", MyWhere(numbers, predicate)));            
+        } 
+        
+        static List<int> MyWhere(List<int> numbers, Predicate<int> predicate) 
             {
                 List<int> newNumbers = new List<int>();
 
@@ -62,7 +63,6 @@ namespace Delegates
 
                 return newNumbers;                
             }
-        }        
     }
 }
 
